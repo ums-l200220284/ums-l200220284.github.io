@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laporan Tugas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            text-align: center;
+            padding: 10px 0;
+            background: #007bff;
+            color: white;
+            margin-bottom: 20px;
+        }
+        h1 {
+            margin: 0;
+        }
+        section {
+            margin-bottom: 20px;
+            padding: 10px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #007bff;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 5px;
+        }
+        pre {
+            background: #f0f0f0;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        .screenshot {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .screenshot img {
+            max-width: 100%;
+            height: auto;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Laporan Tugas Infrastuktur dan Platform Sains Data</h1>
+    </header>
+
+    <section>
+        <h2>Informasi Pribadi</h2>
+        <p><strong>Nama : </strong>Satria Bintang Bagus Pratama</p>
+        <p><strong>NIM : </strong>L200220284</p>
+        <p><strong>Kelas : </strong>D</p>
+    </section>
+
+    <section>
+        <h2>Spesifikasi Laptop</h2>
+        <pre>
+OS Name 			: Microsoft Windows 11 Home Single Language
+Version 			: 10.0.22631 Build 22631
+System Type 			: x64-based PC
+Processor 			: AMD Ryzen 3 3250U with Radeon Graphics, 2600 Mhz, 2 Core(s), 4 Logical Processor(s)
+Installed Physical Memory (RAM) : 8.00 GB
+Total Physical Memory 		: 5.95 GB
+Available Physical Memory 	: 1.31 GB
+Total Virtual Memory 		: 10.7 GB
+Available Virtual Memory 	: 4.55 GB
+Page File Space 		: 4.75 GB</pre>
+    </section>
+
+    <section>
+        <h2>CPU</h2>
+        <pre>AMD Ryzen 3 3250U with Radeon Graphics
+Base speed 		: 2.60 GHz
+Sockets 		: 1
+Cores 			: 2
+Logical processors 	: 4
+Virtualization 		: Enabled
+L1 cache 		: 192 KB
+L2 cache 		: 1.0 MB
+L3 cache 		:  4.0 MB</pre>
+    </section>
+
+    <section>
+        <h2>Langkah-langkah Tugas</h2>
+        Beberapa hal yang sudah saya lakukan diantaranya :
+        <ol>
+            <li>Membuat akun di https://github.com dengan menggunanakan kombinasi ums-[NIM] sebagai username, milik saya adalah ums-l200220284.</li>
+            <li>Membuat repository baru dengan nama 'ums-l200220284.github.io'.</li>
+            <li>Menginstall Github for Windows pada komputer kerja, https://git-scm.com/downloads/win.</li>
+            <li>Pada windows jalankan perintah git-CMD.</li>
+            <li>Pada terminal git, jalankan perintah git clone [alamat repository 'ums-l200220284.github.io'].</li>
+            <li>Membuka windows Command Prompt, klik start > cmd.</li>
+            <li>Menjalankan perintah wsl -l -o  untuk mengetahui distro Linux yang tersedia pada wsl.</li>
+        </ol>
+        Semua ini adalah langkah-langkah tugas sebelum UTS.
+    </section>
+
+    <section>
+        <h2>Permasalahan</h2>
+        Permasalahan utama tugas yang saya kerjakan adalah langkah ke-8 tugas sebelum UTS, yaitu menginstall Ubuntu-22.04 dengan perintah wsl --install -d Ubuntu-22.04.
+        <h3>1. Instalasi Ubuntu via Command Prompt</h3>
+        <p>Saya sudah mencoba menginstall dari Command Prompt, baik cara biasa maupun run as administrator, tetapi loading tidak berjalan. Saya juga sudah mencoba install versi yang lain (Ubuntu-24.04), tetapi hasilnya sama saja.</p>
+        <div class="screenshot">
+            <p>Screenshot :</p>
+            <img src="Screenshot 2024-12-30 090430.png" alt="Screenshot 1">
+            <img src="Screenshot 2024-12-30 100706.png" alt="Screenshot 2">
+        </div>
+        <p>Sebelum screenshot di atas ini, saya sudah pernah berhasil menginstallnya dan masuk ke langkah ke-9 yaitu menjalankan Linux dengan perintah  wsl -d Ubuntu-22.04, tetapi muncul kalimat "error no distribution". Setelah dicaritahu, penyebabnya adalah bios/virtualization, tetapi saat sudah mengubah settingannya tetap tidak bisa.</p>
+
+        <h3>2. Instalasi Ubuntu via VirtualBox</h3>
+        <p>Setelah gagal menginstall dari Command Prompt, saya mencoba menggunakan aplikasi Oracle VM VirtualBox dengan mendownload iso Ubuntu versi 24.04.1 LTS terlebih dahulu di website resminya.
+	<div class="screenshot">
+            <p>Screenshot :</p>
+            <img src="Screenshot 2024-12-30 100933.png" alt="Screenshot 3">
+        </div>
+Berikut langkah-langkah yang saya kerjakan di VirtualBox :</p>
+        <ul>
+            <li>Membuat mesin virtual baru dan mengatur alokasi memori serta penyimpanan.</li>
+            <li>Menambahkan file ISO Ubuntu sebagai disk optik untuk mesin virtual.</li>
+            <li>Memulai instalasi dan mengikuti petunjuk di layar.</li>
+        </ul>
+	<div class="screenshot">
+            <p>Screenshot : </p>
+            <img src="Screenshot 2024-12-31 121739.png" alt="Screenshot 4">
+            <img src="Screenshot 2024-12-31 121816.png" alt="Screenshot 5">
+            <img src="Screenshot 2024-12-31 121824.png" alt="Screenshot 6">
+            <img src="Screenshot 2024-12-31 121959.png" alt="Screenshot 7">
+        </div>
+        <p>Setelah proses di atas, saya berhasil masuk namun terdapat kendala dalam menginstall Ubuntu nya.</p>
+        <div class="screenshot">
+            <p>Foto :</p>
+            <img src="Gambar WhatsApp 2025-01-03 pukul 09.51.14_4ed61f8f.jpg" alt="Foto 1">
+            <img src="Gambar WhatsApp 2025-01-03 pukul 09.51.15_789ec925.jpg" alt="Foto 2">
+        </div>
+        <p>Saya mulai menginstall dari jam 12.16 lalu instalasi berhenti di jam 12.31, dan masih belum jalan hingga jam 13.58 (foto pertama). Bahkan hingga jam 15.27 (foto kedua) masih belum jalan juga.</p>
+    </section>
+
+    <footer>
+        <p>Demikian laporan ini saya buat dengan sebenar-benarnya, berisi apa saja yang telah saya lakukan dan tanpa rekayasa di dalamnya.</p>
+        <p>Terima kasih.</p>
+    </footer>
+</body>
+</html>
